@@ -25,4 +25,8 @@ export default function SearchInput({ target, initialState, onChange }) {
       onChange(e.target.value);
     }
   });
+
+  this.$element.addEventListener("submit", (e) => {
+    e.preventDefault();
+  });
 }
